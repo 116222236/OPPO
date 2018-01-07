@@ -1,0 +1,201 @@
+
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-reminders" data-url="reminders.html">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+            <a href="#" class="back link">
+                <i class="icon icon-back"></i>
+                <span>Back</span>
+            </a>
+        </div>
+                  
+                    <div class="center sliding"><span class="navbar-logo"></span></div>
+                    <div class="right">
+                      
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+          
+            <div class="pages">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="rate" class="page">
+                    <!-- Scrollable page content -->
+                    <div class="page-content">
+          
+                        
+                        <div class="content-block-title">Rate this app - please select values <br>between 1(Strongly Disagree) and<br> 5 (Strongly Agree)</div> 
+                        <br>                 
+
+ <div class="content-block-title">I thought this app was easy to use</div>
+<div class="list-block inset">
+  <ul class="test">
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="text" placeholder="1-5" readonly id="easyUse">
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div> 
+
+<div class="content-block-title">I found this App unnecessarily complex</div>                        
+<div class="list-block inset">
+  <ul class="test">
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="text" placeholder="1-5" readonly id="complex">
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>  
+  
+<div class="content-block-title">I would like to use this app frequently</div>                        
+<div class="list-block inset">
+  <ul class="test">
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="text" placeholder="1-5" readonly id="frequent">
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>                          
+                       
+<div class="content-block-title">I would need training <br>to use this app</div>                        
+<div class="list-block inset">
+  <ul class="test">
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="text" placeholder="1-5" readonly id="training">
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>                              
+
+<div class="content-block-title">I thought the various functions in<br> this app were well integrated</div>                        
+<div class="list-block inset">
+  <ul class="test">
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="text" placeholder="1-5" readonly id="integrated">
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>                          
+                  
+<div class="content-block-title">I thought there was too much <br>inconsistency in this app</div>                        
+<div class="list-block inset">
+  <ul class="test">
+    <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-input">
+            <input type="text" placeholder="1-5" readonly id="inconsistency">
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div> 
+                        
+<div class="content-block-title"><p>What did you like about this app?</p></div>                        
+    <div class="list-block inset">
+  <ul class="test">      
+    <li class="align-top">
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">chat</i></div>
+        <div class="item-inner">
+          <div class="item-title label"></div>
+          <div class="item-input">
+            <textarea id="openOne"></textarea>
+          </div>
+        </div>
+      </div>
+    </li>                        
+        </ul></div> 
+                        
+    <div class="content-block-title"><p>What would you change about this app?</p></div>                        
+    <div class="list-block inset">
+  <ul class="test">      
+    <li class="align-top">
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">chat</i></div>
+        <div class="item-inner">
+          <div class="item-title label"></div>
+          <div class="item-input">
+            <textarea id="openTwo"></textarea>
+          </div>
+        </div>
+      </div>
+    </li>                        
+        </ul></div>                     
+                        
+<div class="list-block inset">
+  <ul class="test">
+    <!-- Text inputs -->
+    <li>
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">person</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Name</div>
+          <div class="item-input">
+            <input type="text" placeholder="Optional" id="name">
+          </div>
+        </div>
+      </div>
+    </li>
+  
+   
+    <!-- Textarea -->
+    <li class="align-top">
+      <div class="item-content">
+        <div class="item-media"><i class="icon f7-icons">chat</i></div>
+        <div class="item-inner">
+          <div class="item-title label">Other Comments</div>
+          <div class="item-input">
+            <textarea id="comment"></textarea>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>                        
+                                      
+ <div class="enterBtnDiv"> <p><a id="saveReview" href="#" class="item-link bttn-float bttn-lg bttn-default">Save Review</a></p></div>
+ 
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Toolbar-->
+            <div class="toolbar">
+                <div class="toolbar-inner">
+                    <!-- Toolbar links -->
+                    <a href="#" class="link">Link 1</a>
+                    <a href="#" class="link">Link 2</a>
+                </div>
+            </div>
+        </div>
+    </div>
+

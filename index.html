@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize this policy to fit your own app's needs. For more guidance, see:
+            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
+        Some notes:
+            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+                * Enable inline JS: add 'unsafe-inline' to default-src
+      
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+  -->
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+
+   
+    <!-- Your app title -->
+    <title>OPPO</title>
+   
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.min.css"/>
+    <link rel="stylesheet" href="lib/framework7/css/framework7.ios.colors.min.css"/>
+
+    <link rel="stylesheet" href="css/dist/framework7.3dpanels.css">
+    <link rel="stylesheet" href="css/framework7-icons.css"/>
+     <link rel="stylesheet" href="css/appCss.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/dist/bttn.min.css"/>
+   
+<style>
+.list-block ul.test{
+    background-color: rgba(249, 235, 234, 0.8); 
+}
+ 
+div[class*="col-"] {
+  text-align: center;
+}
+a.tlbr {
+  color: #36454f;
+}    
+    
+    </style>
+</head>
+
+<body>    
+    <div class="statusbar-overlay"></div>
+
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+        <div class="content-block">
+        <div class="list-block theme-white">    
+    <ul>        
+        <li><a href="services.html" class="item content-item-link"><div class="item-inner">
+                        <div class="item-title">Services</div>
+                      </div></a></li>
+      <li><a href="reminders.html" class="item content-item-link"><div class="item-inner">
+                        <div class="item-title">Reminders</div>
+                      </div></a></li>
+        <li><a href="entry.html" class="item content-item-link"><div class="item-inner">
+                        <div class="item-title">Diary Entry</div>
+                      </div></a></li>
+      <li><a href="audio.html" class="item content-item-link"><div class="item-inner">
+                        <div class="item-title">Mindfulness & Relaxation</div>
+                      </div></a></li>
+        <li><a href="registration.html" class="item content-item-link"><div class="item-inner">
+                        <div class="item-title">Registration Page</div>
+                      </div></a></li>
+            <li><a href="wellness.html" class="item content-item-link"><div class="item-inner">
+                        <div class="item-title">Maintain My Wellness</div>
+                      </div></a></li>
+            <li><a href="notice.html" class="item content-item-link"><div class="item-inner">
+                        <div class="item-title">When I'm Feeling Unwell</div>
+                      </div></a></li>
+            <li><a href="rate.html" class="item content-item-link"><div class="item-inner">
+                        <div class="item-title">Rate This App</div>
+                      </div></a></li>
+        
+        </ul>
+        </div> 
+            <br>
+        <div class="list-block theme-yellow">    
+    <ul>        
+        <li><a href="index.html" class="item content-item-link external"><div class="item-inner">
+                        <div class="item-title">Logout</div>
+                      </div></a></li>   
+            </ul>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Views -->
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-main theme-orange">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+    
+                    <div class="center sliding "><span class="navbar-logo"></span></div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            
+            <div class="pages navbar-through toolbar-through">
+                <!-- Page, "data-page" contains page name -->
+                <div data-page="index" class="page theme-gray">
+                    <!-- Scrollable page content -->
+                    
+                    <div class="page-content">
+                      
+           <div class="list-block inset">             
+        <div class="row">
+  <div class="col-50">
+    <a href="audio.html" class="item-link bttn-lg bttn-bordered bttn-default ">Meditation</a>
+  </div>
+  <div class="col-50">
+    <a href="scales.html" id="med" class="item-link bttn-bordered bttn-lg bttn-default med">Diary</a>
+  </div>
+</div>   
+         <br>               
+        <div class="row">
+  <div class="col-50">
+    <a href="services.html" class="item-link bttn-bordered bttn-lg bttn-default ">Services</a>
+  </div>
+  <div class="col-50">
+    <a href="reminders.html" class="item-link bttn-bordered bttn-lg bttn-default ">Reminders</a>
+  </div>
+</div>       
+                        </div>
+                        
+                        <br>
+                    <br>
+                    <div>    
+                      <img src='img/oppoDef.png' width="80%" height="60%">
+                    </div> 
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="toolbar">
+                <div class="toolbar-inner">
+                    <!-- Toolbar links -->
+                    <a class="tlbr" href="rate.html" class="link">Satisfied? Rate This App</a>
+                </div>
+            </div>
+           </div>
+       </div> 
+                
+          <div class="login-screen modal-in">
+              <div class="view">
+            <div data-page="login" class="page">
+            <div class="page-content login-screen-content">
+          <div class="login-screen-title">OPPO</div>
+          <form>
+            <div class="list-block">
+              <ul>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Username</div>
+                    <div class="item-input">
+                      <input type="text" id="loginUname" placeholder="Your username">
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content">
+                  <div class="item-inner">
+                    <div class="item-title label">Password</div>
+                    <div class="item-input">
+                      <input type="text" id="loginPassword" placeholder="Your password">
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          <div class="list-block bg-white">
+                <ul>
+                  <li>
+                    <div id="passResetMsg"></div> 
+                    <p><a href="#" class="item-link list-button" id="loginBtn">Login</a></p>
+                    <p><a href="registration.html" class="item-link list-button close-login-screen" id="serverBtn"> Register New Account</a></p>
+                    
+                      <br>
+                    <!--<p><a href="#" class="item-link list-button close-login-screen">Close Login Screen</a></p>-->
+                  </li>
+                </ul>
+              </div>
+          </form>
+        </div>                   
+    </div>
+</div>
+</div>
+      
+    
+   <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+  
+    <script type="text/javascript" src="js/dist/framework7.3dpanels.js"></script>
+ 
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="js/Chart.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAW4awJlFB1iLNQRVLny6IRWN2Y4rQrefA"></script>
+    <script type="text/javascript" src="js/gmaps.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/SQLitePlugin.js"></script> 
+<script type="text/javascript">
+    
+
+       
+$$('#loginBtn').on('click', function () {
+        var networkState = navigator.network.connection.type;
+        var states = {};
+        states[Connection.UNKNOWN]  = 'Unknown connection';
+        states[Connection.ETHERNET] = 'Ethernet connection';
+        states[Connection.WIFI]     = 'WiFi connection';
+        states[Connection.CELL_2G]  = 'Cell 2G connection';
+        states[Connection.CELL_3G]  = 'Cell 3G connection';
+        states[Connection.CELL_4G]  = 'Cell 4G connection';
+        states[Connection.NONE]     = 'No network connection';
+        if(states[networkState] == 'No network connection'){
+            myApp.alert("please connect phone to internet to login");
+
+        }
+        else{
+            var u = document.getElementById("loginUname").value;
+            var p = document.getElementById("loginPassword").value;
+            checkExternal(u,p);
+            
+        }
+    
+})
+
+function checkExternal(e,f){
+    var xmlhttp;
+    if (window.XMLHttpRequest) {
+        xmlhttp=new XMLHttpRequest();
+    }
+    else {
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+            writeStatus(xmlhttp.responseText);
+        }
+        else if (xmlhttp.readyState==4 && xmlhttp.status!=200) {
+            console.log("Failed to initiate init() call to external source");    
+        }
+    }
+ xmlhttp.open("GET",'http://cs1.ucc.ie/~sb22/appPhp/checkPassword.php?useName=' + e + '&passWord1=' + f, true);
+ xmlhttp.send(); 
+}
+    
+function writeStatus(msg){
+  document.getElementById("passResetMsg").innerHTML = msg;
+}  
+             
+var online = new Date();
+var offline;
+
+document.addEventListener("pause", function() {
+        var offline = new Date();
+        var useid = localStorage.getItem("useid");
+        sessionExtern(online, offline, useid);
+        
+    })    
+
+document.addEventListener("resume", function() {
+        var online = new Date();
+        var useid = localStorage.getItem("useid");
+        sessionExtern(online, offline, useid);
+    })       
+    
+function sessionExtern(online, offline, useid){
+  
+    var xmlhttp;
+
+    if (window.XMLHttpRequest) {
+        xmlhttp=new XMLHttpRequest();
+    }
+    else {
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+    }
+
+    xmlhttp.onreadystatechange=function() {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+            writeStatus(xmlhttp.responseText);
+        }
+        else if (xmlhttp.readyState==4 && xmlhttp.status!=200) {
+            //writeStatus("saving externally..... this can take a minute..");
+            //myApp.alert("session extern issue");
+            console.log("Failed to initiate init() call to external source");
+            
+        }
+    }
+
+    xmlhttp.open("GET",'http://cs1.ucc.ie/~sb22/appPhp/session.php?online=' + online + '&offline=' + offline + '&useid=' + useid, true);
+    xmlhttp.send();
+    
+    
+}    
+    
+
+function uuidv4() {
+    return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+    (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+  )
+}
+var useid = uuidv4();    
+
+var popup = "0";
+//myApp.alert(useid, "index first useid alert");
+
+$$('#med').on('click', function () {
+   if(popup == "0") {
+            localStorage.setItem("useid", useid);
+            localStorage.setItem("scale1", "You have yet to");
+				localStorage.setItem("scale2", "Set up your");
+				localStorage.setItem("scale3", "Custom scales");
+				localStorage.setItem("scale4", "Please do so now");
+            popup = '1';
+         }else{
+             //myApp.alert(localStorage.getItem("useid"));
+             console.log(localStorage.getItem("useid"));
+    }
+})    
+    
+    
+</script>
+   
+</body>
+
+</html>

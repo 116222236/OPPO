@@ -1,0 +1,197 @@
+
+    <div class="views">
+        <!-- Your main view, should have "view-main" class -->
+        <div class="view view-entry" data-url="entry.html">
+            <!-- Top Navbar-->
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left">
+                    <a href="index.html" class="back link">
+                        <i class="icon icon-back"></i>
+                    <span>Back</span>
+                    </a>
+                </div>
+                    <!-- We need cool sliding animation on title element, so we have additional "sliding" class -->
+                    <div class="center sliding"><span class="navbar-logo"></span></div>
+                    <div class="right">
+                        <!--
+                          Right link contains only icon - additional "icon-only" class
+                          Additional "open-panel" class tells app to open panel when we click on this link
+                        -->
+                        <a href="#" class="link icon-only open-panel"><i class="icon icon-bars"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pages container, because we use fixed-through navbar and toolbar, it has additional appropriate classes-->
+            <div class="pages navbar-through toolbar-through">
+               
+                <!-- Page, "data-page" contains page name -->
+                
+                <div data-page="entry" class="page">
+                
+                <!-- Scrollable page content -->
+                <div class="page-content">
+                        
+                <div class="content-block-title">How are you today? Use text, <br>scales or photos to describe your day.</div>
+            
+                <div class="content-block-title">Step 1: Choose your scale.</div>    
+                <div class="list-block inset">
+                    <ul class="test">
+                        <!-- Text inputs -->
+                         <li>
+                        <div class="item-content">
+                        <div class="item-media"><i class="icon f7-icons color-lightblue">chat</i></div>
+                        <div class="item-inner">
+                        <div class="item-input">
+                        <input id="custom" type="text" placeholder="Your Scales"/>
+                        </div>
+                        </div>
+                        </div>
+                        </li>
+                        
+                        <li>
+                        <div class="item-content">
+                        <div class="item-media"><i class="icon f7-icons color-lightblue">chat</i></div>
+                        <div class="item-inner">
+                        <div class="item-input">
+                        <input id="feeling" type="text" placeholder="Custom Scale (eg. Appetite, Mood)" />
+                        </div>
+                        </div>
+                        </div>
+                        </li>
+                         </ul>
+                    </div>
+                    <div class="content-block-title">Step 2: Choose your input?</div>
+                         <div class="list-block inset" id="test1">
+                    <ul class="test"> 
+
+                        
+                        <li>
+                        <div class="item-content">
+                        <div class="item-media"><i class="icon f7-icons color-lightblue">graph_round</i></div>
+                        <div class="item-inner">
+                        <div class="item-input">
+                        <input id="rating" type="text" placeholder="Rating" readonly/>
+                        </div>
+                        </div>
+                        </div>
+                        </li>
+                        
+                       
+                        
+                        <li>
+                        
+                        <a href="#" class="item-link smart-select" data-back-on-select="true" data-open-in="picker">
+                    
+                        <select placeholder="Colour" name="color" id="color">
+                        <option value=" ">None</option>
+                        <option value="Yellow" data-option-image="https://dummyimage.com/290x29/FFFF00/FFFF00"></option>
+                        <option value="Gold" data-option-image="https://dummyimage.com/290x29/D4AF37/D4AF37"></option>
+                        <option value="Orange" data-option-image="https://dummyimage.com/290x29/E67E22/E67E22" ></option>
+                        <option value="Scarlet" data-option-image="https://dummyimage.com/290x29/ce0000/ce0000"></option>
+                        <option value="Red" data-option-image="https://dummyimage.com/290x29/ff0000/ff0000"></option>
+                        <option value="Pink" data-option-image="https://dummyimage.com/290x29/FF00FF/FF00FF"></option>
+                        <option value="Purple" data-option-image="https://dummyimage.com/290x29/5B2C6F/5B2C6F"></option>
+                        <option value="Violet" data-option-image="https://dummyimage.com/290x29/8A2BE2/8A2BE2"></option>
+                        <option value="Blue" data-option-image="https://dummyimage.com/290x29/0000ff/0000ff"></option>
+                        <option value="Teal" data-option-image="https://dummyimage.com/290x29/008080/008080"></option>
+                        <option value="Green" data-option-image="https://dummyimage.com/290x29/00FF33/00FF33"></option>
+                        <option value="Forest" data-option-image="https://dummyimage.com/290x29/006600/006600"></option>
+                        </select>
+        <div class="item-content color-gray">
+        <div class="item-media"><i class="icon f7-icons color-lightblue">images</i></div>
+          <div class="item-inner color-gray">
+            
+            <div class="item-title">Colours</div>
+            <div class="item-after">Blue</div>
+          </div>
+        </div>
+      </a>
+    </li>
+                        
+      <li>
+      <a id="captureWithFile" href="#" class="item-link item-content">
+        <div class="item-media"><i class="icon f7-icons">camera</i></div>
+        <div class="item-inner">
+          <div class="item-title">Take Photo</div>
+          <div class="item-after"></div>
+        </div>
+      </a>
+    </li>               
+            
+                       
+      <li>
+      <a id="selectFromLib" href="#" class="item-link item-content">
+        <div class="item-media"><i class="icon f7-icons">camera_fill</i></div>
+        <div class="item-inner">
+          <div class="item-title">Choose Photo From Gallery</div>
+          <div class="item-after"></div>
+        </div>
+      </a>
+    </li>                     
+                        </ul>
+                    </div> 
+  <div class="content-block-title"><p>(Optional) Step 3: Add a diary entry.</p></div>
+                   <div class="list-block inset">
+                    <ul class="test"> 
+                         <li>
+                        <div class="item-content">
+                        <div class="item-media"><i class="icon f7-icons color-lightblue">chats</i></div>
+                        <div class="item-inner">
+                        <div class="item-input">
+                        <textarea class="resizable" id="diary" placeholder="Diary" type="text"></textarea>
+                        </div>
+                        </div>
+                        </div>
+                        </li>
+                       </ul>
+                    </div>
+                    
+<div class="enterBtnDiv"> <p><a id="enterBtn" href="#" class="item-link bttn-float bttn-lg bttn-default">Enter</a></p></div>
+                  
+                       
+<!--<div class="content-block accordion-list custom-accordion">
+  <div class="accordion-item">
+    <div class="accordion-item-toggle">
+      <i class="icon icon-plus">+</i>
+      <span>Take Photo</span>
+    </div>
+    <div class="accordion-item-content">
+      <p class="buttons-row">
+        <a href="#" class="button button-round" id="captureWithFile">Take Photo</a>
+        <a href="#" class="button button-round" id="selectFromLib">From Gallary</a>
+        </p>     
+        
+    </div>
+  </div>
+</div>  -->                        
+                        
+<br>
+
+<div class="enterBtnDiv">
+<img style="display:none;max-width:200px;max-height:300px;" id="smallImage" src=" " />  
+  </div> 
+                        
+<div class="content-block-title color-white">Diary Table</div>
+                        
+<div class="list-block listDiv" id="listDiv">
+    <ul class="listDiv2" id="listDiv2">
+    </ul>
+</div>
+        </div>
+    </div>
+</div>
+           
+            <!-- Bottom Toolbar-->
+            <div class="toolbar color-lightblue">
+                <div class="toolbar-inner theme-lightblue">
+                    <!-- Toolbar links -->
+                    <a href="#" class="link">Link 1</a>
+                    <a href="#" class="link">Link 2</a>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
